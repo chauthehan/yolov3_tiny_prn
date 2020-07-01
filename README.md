@@ -2,6 +2,7 @@
 
 Source build lại yolov3-tiny-prn bằng tensorflow 2.0 để detect lửa cháy sớm, về kiến trúc prn (partial residual network), tham khảo paper https://github.com/WongKinYiu/PartialResidualNetworks/blob/master/pdf/iccvw-prn.pdf
 
+data: https://drive.google.com/drive/folders/1--dKwDtE17ztYuYTu0nBhwj0cEEWhjOf?usp=sharing
 CÁC BƯỚC TRAINING:
 
 1. Tạo data với định dạng yolo sử dụng các tool như LabelImg, lưu list data như trong file train.txt:
