@@ -3,15 +3,6 @@
 # from functools import wraps
 
 import numpy as np
-# from keras import backend as K
-# from keras.layers import Conv2D,Input, Add, ZeroPadding2D, UpSampling2D,MaxPooling2D, concatenate
-# from keras.layers.advanced_activations import LeakyReLU
-# from keras.layers.normalization import BatchNormalization
-# from keras.models import Model
-# from keras.regularizers import l2
-
-# from yolo3.utils import compose
-#yolov3_tiny_prn.py
 import tensorflow.keras.backend as K
 import tensorflow as tf
 from tensorflow.keras import Model
@@ -111,12 +102,6 @@ def tiny_yolo_prn_body(cfg_file, inputs, num_anchors, num_classes):
 
     model = Model(input_image, [y1, y2])
     return model
-
-inputs = Input(shape=(416, 416, 3))
-num_anchors = 3
-num_classes = 1
-model = tiny_yolo_prn_body('cfg/yolov3-tiny-prn.cfg',inputs, num_anchors, num_classes)
-model.summary()
 
 def yolo_head(feats, anchors, num_classes, input_shape, calc_loss=False):
     """Convert final layer features to bounding box parameters."""
