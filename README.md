@@ -7,6 +7,7 @@ CÁC BƯỚC TRAINING:
 1. Tạo data với định dạng yolo sử dụng các tool như LabelImg, lưu list data như trong file train.txt:
 Định dạng mỗi dòng: <đường dẫn tới ảnh> <box1> <box2> .. <boxN>
 Định dạng của box: x_min,y_min,x_max,y_max,class_id (không có dấu cách)
+  **Sử dụng create_traintxt.py để tạo file train.txt từ các data tạo ra từ labelImg**
 
 2. Sử dụng yolo3-tiny.conv.11.weights là file pretrained. file convert.py để chuyển từ file pre-trained từ dạng .weights sang .h5
 Command: python convert.py -w yolov3-tiny-conv.11.cfg model_data/yolov3-tiny.conv.11.weights model_data/conv.11.h5
