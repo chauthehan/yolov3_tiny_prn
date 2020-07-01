@@ -25,5 +25,6 @@ NOTE:
 
 Line demo: https://www.youtube.com/watch?v=4nqMgHINvGQ&feature=youtu.be&fbclid=IwAR0ZdDzLPP7L5qSPV7iSgwMFBVwcU4oB-zzRhrWl_mNCKv_k40DzyXzASyc
 
+project tham khảo chủ yếu từ source: https://github.com/qqwweee/keras-yolo3
 
 
